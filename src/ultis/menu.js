@@ -1,27 +1,33 @@
 import icons from "./icons";
 
-const { MdOutlineLibraryMusic, KHAMPHA, ZINGCHART } = icons;
+const {
+  MdOutlineLibraryMusic,
+  IconCaNhan,
+  IconKhamPha,
+  IconZingChart,
+  IconTheoDoi,
+} = icons;
 
 export const sidebarMenu = [
   {
     path: "mymusic",
     text: "Cá nhân",
-    icon: <MdOutlineLibraryMusic size={24} />,
+    icon: IconCaNhan,
   },
   {
     path: "",
     text: "Khám phá",
     end: true,
-    icon: KHAMPHA,
+    icon: IconKhamPha,
   },
   {
     path: "zing-chart",
     text: "#zingchart",
-    icon: ZINGCHART,
+    icon: IconZingChart,
   },
   {
     path: "follow",
     text: "Theo dõi",
-    icon: <MdOutlineLibraryMusic size={24} />,
+    icon: IconTheoDoi,
   },
 ];
