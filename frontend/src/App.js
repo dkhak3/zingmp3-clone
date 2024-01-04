@@ -1,8 +1,16 @@
 import { Routes, Route } from "react-router-dom";
 import { Home, Login, Public } from "./containers/public";
 import path from "./ultis/path";
+import { useEffect } from "react";
+import * as actions from "./store/actions";
+import { useDispatch } from "react-redux";
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(actions.getHome());
+  }, []);
+
   return (
     <>
       <Routes>
