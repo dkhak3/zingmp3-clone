@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { getArrSlider } from "../ultis/fn";
+import * as actions from "../store/actions";
 
 const Slider = () => {
   const { banner } = useSelector((state) => state.app);
+  const dispath = useDispatch();
 
   // ainimation for banner
   useEffect(() => {
@@ -72,6 +74,13 @@ const Slider = () => {
     };
   }, []);
 
+  const handleClickBanner = (item) => {
+    console.log("🚀 ~ file: Slider.js:76 ~ handleClickBanner ~ item:", item);
+    if (item.type === 1) {
+      dispath(actions.setCurSongId(item.encodeId));
+    }
+  };
+
   return (
     <div className="w-full overflow-hidden px-[59px]">
       <div className="flex gap-8 w-full pt-8">
@@ -79,7 +88,8 @@ const Slider = () => {
           <img
             key={item.encodeId}
             src={item.banner}
-            alt=""
+            onClick={() => handleClickBanner(item)}
+            alt="Banner"
             className={`slider-item flex-1 object-contain w-[30%] rounded-lg ${
               index <= 2 ? "block" : "hidden"
             }`}

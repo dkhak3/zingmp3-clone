@@ -56,7 +56,7 @@ const icons = {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="w-6 h-6 leading-[15.84px] text-[#32323d]"
+      className="w-6 h-6 leading-[15.84px]"
     >
       <path
         strokeLinecap="round"
@@ -72,7 +72,7 @@ const icons = {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="w-6 h-6 leading-[15.84px] text-[#32323d]"
+      className="w-6 h-6 leading-[15.84px]"
     >
       <path
         strokeLinecap="round"
@@ -88,7 +88,7 @@ const icons = {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="w-6 h-6 text-[#757575]"
+      className="w-6 h-6 text-color-757"
     >
       <path
         strokeLinecap="round"
