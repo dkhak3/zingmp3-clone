@@ -24,6 +24,7 @@ module.exports = {
         "color-282": "#282828",
         "color-757": "#757575",
         "color-9ea": "#9EA7AA",
+        "color-696": "#696969",
       },
       keyframes: {
         "slide-right": {
@@ -65,6 +66,12 @@ module.exports = {
         "slide-left2":
           "slide-left2 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;",
       },
+      flex: {
+        4: "4 4 0%",
+      },
+    },
+    screens: {
+      1600: "1600px",
     },
   },
   plugins: [],
