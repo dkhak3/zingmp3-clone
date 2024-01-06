@@ -75,9 +75,9 @@ const Slider = () => {
   }, []);
 
   const handleClickBanner = (item) => {
-    console.log("🚀 ~ file: Slider.js:76 ~ handleClickBanner ~ item:", item);
     if (item.type === 1) {
       dispath(actions.setCurSongId(item.encodeId));
+      dispath(actions.play(true))
     }
   };
 
